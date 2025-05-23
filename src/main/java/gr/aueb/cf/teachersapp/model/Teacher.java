@@ -1,5 +1,6 @@
 package gr.aueb.cf.teachersapp.model;
 
+import gr.aueb.cf.teachersapp.model.static_data.Region;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -28,11 +29,10 @@ public class Teacher {
     private String firstname;
     private String lastname;
 
+     private Region region;
+
     @PrePersist
     public void initializeUUID() {
         if (uuid == null) uuid = UUID.randomUUID().toString();
     }
-
-    // private Region region;
-
 }
