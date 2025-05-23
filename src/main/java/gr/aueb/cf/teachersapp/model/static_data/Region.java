@@ -31,5 +31,9 @@ public class Region {
         return Collections.unmodifiableSet(teachers);
     }
 
-    public
+    public void addTeacher(Teacher teacher) {
+        if (teachers == null) teachers = new HashSet<>();
+        teachers.add(teacher);
+        teacher.setRegion(this);
+    }
 }
