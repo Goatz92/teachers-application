@@ -29,6 +29,8 @@ public class Teacher {
     private String firstname;
     private String lastname;
 
+    @ManyToOne
+    @JoinColumn(name = "region_id")
      private Region region;
 
     @PrePersist
