@@ -70,7 +70,7 @@
         <appender-ref ref="TomcatLogs"/>
     </logger>
 
-<!--    addictivity="false" commands not to propagate to parent logger-->
+<!--    additivity="false" commands not to propagate to parent logger-->
 <!--    levels -> trace, debug, info, warn, error -->
     <logger name="org.apache.coyote" level="DEBUG" additivity="false">
         <appender-ref ref="TomcatLogs"/>
