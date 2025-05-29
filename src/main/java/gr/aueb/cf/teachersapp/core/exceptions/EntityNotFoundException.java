@@ -1,0 +1,9 @@
+package gr.aueb.cf.teachersapp.core.exceptions;
+
+public class EntityNotFoundException extends EntityGenericException {
+    private static final String DEFAULT_CODE = "Not Found";
+
+    public EntityNotFoundException(String code, String message) {
+        super(code + DEFAULT_CODE, message);
+    }
+}
