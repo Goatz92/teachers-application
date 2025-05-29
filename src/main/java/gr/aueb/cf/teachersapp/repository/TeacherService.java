@@ -10,6 +10,7 @@ import gr.aueb.cf.teachersapp.model.static_data.Region;
 import gr.aueb.cf.teachersapp.service.ITeacherService;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
