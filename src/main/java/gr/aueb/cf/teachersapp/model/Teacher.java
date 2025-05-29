@@ -15,7 +15,7 @@ import java.util.UUID;
 @Getter
 @Setter
 @Table(name = "table")
-public class Teacher extends AbstractEntity{
+public class Teacher extends AbstractEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
